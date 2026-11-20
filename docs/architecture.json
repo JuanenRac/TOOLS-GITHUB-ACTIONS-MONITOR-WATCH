@@ -1,0 +1,86 @@
+{
+  "repo": "TOOLS-GITHUB-ACTIONS-MONITOR-WATCH",
+  "ecosystem": "eh3d",
+  "tagline": "A glance at your workflows on your wrist: planned, not built.",
+  "description": "The planned minimal watch version follows the Android app, only reads from the monitor of its user and shows a small part of what the monitor knows. This repository has no code yet.",
+  "columns": [
+    "WHO WILL USE IT",
+    "THIS REPOSITORY",
+    "WHAT IT WILL TALK TO"
+  ],
+  "nodes": [
+    {
+      "id": "person",
+      "column": 0,
+      "level": "external",
+      "title": "A person on call",
+      "lines": [
+        "will glance at the watch to",
+        "see whether anything is red"
+      ]
+    },
+    {
+      "id": "app",
+      "column": 1,
+      "level": "untested",
+      "title": "The watch app",
+      "lines": [
+        "planned, nothing built",
+        [
+          "no code, no tests",
+          "warn"
+        ]
+      ],
+      "code": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "monitor",
+      "column": 2,
+      "level": "external",
+      "title": "GitHub Actions Monitor",
+      "lines": [
+        "read API v1,",
+        "read only"
+      ]
+    },
+    {
+      "id": "far",
+      "column": 2,
+      "level": "external",
+      "title": "The Android app",
+      "lines": [
+        "planned; the watch follows it",
+        "and does not exist yet"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "from": "person",
+      "to": "app",
+      "label": "will use",
+      "level": "untested"
+    },
+    {
+      "from": "app",
+      "to": "monitor",
+      "label": "will read",
+      "level": "untested"
+    },
+    {
+      "from": "app",
+      "to": "far",
+      "label": "follows",
+      "level": "untested"
+    }
+  ],
+  "legend": {
+    "tested": "tested in CI",
+    "untested": "planned, not built",
+    "config": "needs a device",
+    "external": "outside this repository"
+  },
+  "footer": "Nothing here has been built or run yet: this repository is only the base."
+}

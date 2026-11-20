@@ -1,0 +1,182 @@
+{
+  "repo": "MONITOR-WATCH",
+  "ecosystem": "eh3d",
+  "svg": "en",
+  "exempt": [],
+  "cards": [
+    {
+      "name": "tools/",
+      "span": 3,
+      "accent": "b",
+      "sub": {
+        "en": "checks that need no Gradle",
+        "es": "comprobaciones que no necesitan Gradle",
+        "de": "Prüfungen ohne Gradle",
+        "fr": "contrôles sans Gradle",
+        "it": "controlli senza Gradle",
+        "ja": "Gradle 不要のチェック",
+        "zh": "无需 Gradle 的检查",
+        "pt": "verificações sem Gradle"
+      },
+      "rows": [
+        {
+          "name": "ci_validate.py",
+          "desc": {
+            "en": "manifest, versions, README parity",
+            "es": "manifiesto, versiones, paridad de README",
+            "de": "Manifest, Versionen, README-Parität",
+            "fr": "manifeste, versions, parité des README",
+            "it": "manifesto, versioni, parità dei README",
+            "ja": "マニフェスト、バージョン、README の整合",
+            "zh": "清单、版本、README 一致性",
+            "pt": "manifesto, versões, paridade dos README"
+          },
+          "tree_name": "ci_validate.py"
+        },
+        {
+          "name": "make_architecture.py  make_structure.py",
+          "desc": {
+            "en": "draw the two pictures of the README",
+            "es": "dibujan las dos imágenes del README",
+            "de": "zeichnen die beiden Bilder des README",
+            "fr": "dessinent les deux images du README",
+            "it": "disegnano le due immagini del README",
+            "ja": "README の 2 つの図を描く",
+            "zh": "绘制 README 的两张图",
+            "pt": "desenham as duas imagens do README"
+          },
+          "tree_name": "make_architecture.py make_structure.py"
+        }
+      ]
+    },
+    {
+      "name": {
+        "en": "Other folders and the files at the root",
+        "es": "Otras carpetas y los archivos de la raíz",
+        "de": "Weitere Ordner und die Dateien im Wurzelverzeichnis",
+        "fr": "Autres dossiers et fichiers à la racine",
+        "it": "Altre cartelle e i file nella radice",
+        "ja": "その他のフォルダーとルートのファイル",
+        "zh": "其他文件夹和根目录文件",
+        "pt": "Outras pastas e os ficheiros da raiz"
+      },
+      "kind": "group",
+      "span": 3,
+      "accent": "a",
+      "rows": [
+        {
+          "name": "docs/",
+          "desc": {
+            "en": "the sources of the two pictures",
+            "es": "las fuentes de las dos imágenes",
+            "de": "die Quellen der beiden Bilder",
+            "fr": "les sources des deux images",
+            "it": "le sorgenti delle due immagini",
+            "ja": "2 つの図の元データ",
+            "zh": "两张图的数据源",
+            "pt": "as fontes das duas imagens"
+          },
+          "tree_name": "docs/"
+        },
+        {
+          "name": "images/",
+          "desc": {
+            "en": "banner and the two pictures",
+            "es": "banner y las dos imágenes",
+            "de": "Banner und die beiden Bilder",
+            "fr": "bannière et les deux images",
+            "it": "banner e le due immagini",
+            "ja": "バナーと 2 つの図",
+            "zh": "横幅图和两张图片",
+            "pt": "banner e as duas imagens"
+          },
+          "tree_name": "images/"
+        },
+        {
+          "name": ".github/",
+          "desc": {
+            "en": "CI workflows and templates",
+            "es": "flujos de CI y plantillas",
+            "de": "CI-Workflows und Vorlagen",
+            "fr": "workflows de CI et modèles",
+            "it": "workflow di CI e modelli",
+            "ja": "CI ワークフローとテンプレート",
+            "zh": "CI 工作流和模板",
+            "pt": "fluxos de CI e modelos"
+          },
+          "tree_name": ".github/"
+        },
+        {
+          "name": "VERSION",
+          "desc": {
+            "en": "the version of the repository",
+            "es": "la versión del repositorio",
+            "de": "die Version des Repositorys",
+            "fr": "la version du dépôt",
+            "it": "la versione del repository",
+            "ja": "リポジトリのバージョン",
+            "zh": "仓库的版本",
+            "pt": "a versão do repositório"
+          },
+          "tree_name": "VERSION"
+        },
+        {
+          "name": "electro-hobby-3d.project.json",
+          "desc": {
+            "en": "the manifest of the project",
+            "es": "el manifiesto del proyecto",
+            "de": "das Manifest des Projekts",
+            "fr": "le manifeste du projet",
+            "it": "il manifesto del progetto",
+            "ja": "プロジェクトのマニフェスト",
+            "zh": "项目清单",
+            "pt": "o manifesto do projeto"
+          },
+          "tree_name": "electro-hobby-3d.project.json"
+        },
+        {
+          "name": "CHANGELOG.md",
+          "desc": {
+            "en": "what changed in each version",
+            "es": "qué cambió en cada versión",
+            "de": "was sich in jeder Version geändert hat",
+            "fr": "ce qui a changé dans chaque version",
+            "it": "cosa è cambiato in ogni versione",
+            "ja": "各バージョンの変更点",
+            "zh": "每个版本的变更",
+            "pt": "o que mudou em cada versão"
+          },
+          "tree_name": "CHANGELOG.md"
+        },
+        {
+          "name": "SECURITY.md  SUPPORT.md",
+          "desc": {
+            "en": "how to report a vulnerability and where to ask",
+            "es": "cómo informar de una vulnerabilidad y dónde preguntar",
+            "de": "Schwachstellen melden und Fragen stellen",
+            "fr": "signaler une vulnérabilité et poser des questions",
+            "it": "come segnalare una vulnerabilità e dove chiedere",
+            "ja": "脆弱性の報告方法と問い合わせ先",
+            "zh": "如何报告漏洞及在哪里提问",
+            "pt": "como comunicar uma vulnerabilidade e onde perguntar"
+          },
+          "tree_name": "SECURITY.md SUPPORT.md"
+        },
+        {
+          "name": "CONTRIBUTING.md  LICENSE",
+          "desc": {
+            "en": "how to contribute, the code of conduct and the licence",
+            "es": "cómo contribuir, el código de conducta y la licencia",
+            "de": "Mitwirken, Verhaltenskodex und Lizenz",
+            "fr": "contribuer, code de conduite et licence",
+            "it": "come contribuire, codice di condotta e licenza",
+            "ja": "貢献方法、行動規範、ライセンス",
+            "zh": "参与贡献、行为准则和许可证",
+            "pt": "como contribuir, o código de conduta e a licença"
+          },
+          "tree_name": "CONTRIBUTING.md CODE_OF_CONDUCT.md LICENSE"
+        }
+      ]
+    }
+  ]
+}

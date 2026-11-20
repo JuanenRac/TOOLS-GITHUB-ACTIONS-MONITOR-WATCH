@@ -1,0 +1,60 @@
+name: EH3D CI baseline
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  # a newer push to a branch replaces the run before it; the runs of main and of the tags are never cancelled
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' && !startsWith(github.ref, 'refs/tags/') }}
+
+permissions:
+  contents: read
+
+jobs:
+  # The checks every repository of the suite runs, held once in EH3D-DOCS as a reusable workflow
+  # (the manifest, the documents, the pictures of the README, the tests of tools/). The reference is
+  # a full commit, so a change there reaches this repository only when this line is moved.
+  validate:
+    uses: JuanenRac/EH3D-DOCS/.github/workflows/validate.yml@4610941ddec34b44f54073f0f0acf1ccd1b9ae48
+    with:
+      python-version: "3.12"
+      check-pictures: true
+      run-tool-tests: true
+
+  changelog:
+    name: The change has a line in the CHANGELOG
+    if: ${{ github.event_name == 'pull_request' && !contains(github.event.pull_request.labels.*.name, 'no-changelog') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+          fetch-depth: 0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.12"
+      - name: Compare with the base branch
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: python -I tools/changelog_pr_check.py --base "origin/$BASE_REF"
+
+  # The one check to require in the rules of the branch. It always runs, fails when a job failed or was cancelled and accepts a job that was
+  # skipped on purpose (the changelog check on a push, an expensive job whose paths did not change), so it never waits for a job that did not start.
+  ci-gate:
+    name: CI gate
+    if: ${{ always() }}
+    needs: [validate, changelog]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Every job ran, or was skipped on purpose
+        env:
+          RESULTS: ${{ join(needs.*.result, ' ') }}
+        run: |
+          echo "results: $RESULTS"
+          case " $RESULTS " in *" failure "*|*" cancelled "*) exit 1 ;; esac

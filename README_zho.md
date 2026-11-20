@@ -6,7 +6,7 @@
 
 <p align="center"><a href="README.md">🇺🇸 English</a> | <a href="README_spa.md">🇪🇸 Español</a> | <a href="README_fra.md">🇫🇷 Français</a> | <a href="README_ita.md">🇮🇹 Italiano</a> | <a href="README_deu.md">🇩🇪 Deutsch</a> | 🇨🇳 <b>中文</b> | <a href="README_jpn.md">🇯🇵 日本語</a> | <a href="README_por.md">🇵🇹 Português</a></p>
 
-### GitHub Actions Monitor 的 Android 应用计划中的极简手表版：在手腕上快速查看你的工作流。仅为脚手架：目前尚未实现任何功能。
+### GitHub Actions Monitor 的 Android 应用计划中的极简Wear OS 手表版：在手腕上快速查看你的工作流。仅为脚手架：目前尚未实现任何功能。
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-GPL%203.0--or--later-blue.svg" alt="GPL 3.0 or later">
@@ -51,14 +51,14 @@
 
 ## 🎯 概述
 
-* **它将是什么：** Android 应用的极简手表版，快速查看是否有红色项目，以及你自己的监控器最近的重要告警。
+* **它将是什么：** Android 应用的极简Wear OS 手表版，快速查看是否有红色项目，以及你自己的监控器最近的重要告警。
 * **它跟随 Android 应用：** 它在 [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) 之后构建，只显示该应用所展示内容的一个子集。
 * **只读：** 它只会从你的监控器读取。不会写入 GitHub，也不会改变监控器中的任何内容。
 * **它（目前）不是什么：** 没有可安装的应用，没有发布版本，也没有日期。本仓库只是预留位置，并如实说明计划内容。
 
 ## 🧩 在 EH3D 中的角色
 
-TOOLS-GITHUB-ACTIONS-MONITOR-WATCH 的目标是成为 GitHub Actions Monitor（[TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)）的 Android 应用 [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) 的极简手表版。它只显示监控器已经知道的一小部分内容，自己不做任何决定。
+TOOLS-GITHUB-ACTIONS-MONITOR-WATCH 的目标是成为 GitHub Actions Monitor（[TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)）的 Android 应用 [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) 的极简Wear OS 手表版。它只显示监控器已经知道的一小部分内容，自己不做任何决定。
 
 ## 🏛️ 架构
 
@@ -148,8 +148,8 @@ README 和文本提供英语、西班牙语、法语、意大利语、德语、�
 
 ## 🔗 相关项目
 
-* [TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)：手表计划显示其数据的监控器
-* [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID)：本手表版所跟随的计划中的 Android 应用
+* [TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)：Wear OS 手表计划显示其数据的监控器
+* [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID)：本Wear OS 手表版所跟随的计划中的 Android 应用
 * [EH3D-DOCS](https://github.com/JuanenRac/EH3D-DOCS)：约定和共享检查
 
 ## 📚 文档

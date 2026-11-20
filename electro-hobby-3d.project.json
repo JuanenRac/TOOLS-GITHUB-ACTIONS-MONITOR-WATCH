@@ -4,7 +4,7 @@
   "name": "TOOLS-GITHUB-ACTIONS-MONITOR-WATCH",
   "version": "0.0.1",
   "role": "ui",
-  "stack": "android",
+  "stack": "Wear OS",
   "technologies": [
     "Kotlin",
     "Wear OS",
@@ -17,7 +17,7 @@
   "family": "Tools",
   "parent": "TOOLS-GITHUB-ACTIONS-MONITOR",
   "build": "Not built yet: there is no watch project. The repository checks run with python -I tools/ci_validate.py.",
-  "notes": "Scaffolding v0.0.1: the planned minimal watch version of the Android app of GitHub Actions Monitor, which follows TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID and would show a small part of what the monitor knows. It only reads from the monitor and writes nothing to GitHub. There is no code yet: this repository holds only its base (documents, manifest, licence and shared checks). Nothing has been built, tested or run on a watch; how the watch gets its data is not decided.",
+  "notes": "Scaffolding v0.0.1: the planned minimal Wear OS watch version of the Android app of GitHub Actions Monitor, which follows TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID and would show a small part of what the monitor knows. It only reads from the monitor and writes nothing to GitHub. There is no code yet: this repository holds only its base (documents, manifest, licence and shared checks). Nothing has been built, tested or run on a Wear OS watch; how the watch gets its data is not decided.",
   "native_version": {
     "file": "VERSION",
     "pattern": "^(\\d+\\.\\d+\\.\\d+)"

@@ -6,7 +6,7 @@
 
 <p align="center"><a href="README.md">🇺🇸 English</a> | <a href="README_spa.md">🇪🇸 Español</a> | <a href="README_fra.md">🇫🇷 Français</a> | 🇮🇹 <b>Italiano</b> | <a href="README_deu.md">🇩🇪 Deutsch</a> | <a href="README_zho.md">🇨🇳 中文</a> | <a href="README_jpn.md">🇯🇵 日本語</a> | <a href="README_por.md">🇵🇹 Português</a></p>
 
-### Versione minima prevista per smartwatch dell'app Android di GitHub Actions Monitor: uno sguardo rapido ai tuoi workflow al polso. Solo impalcatura: non è ancora implementato nulla.
+### Versione minima prevista per smartwatch Wear OS dell'app Android di GitHub Actions Monitor: uno sguardo rapido ai tuoi workflow al polso. Solo impalcatura: non è ancora implementato nulla.
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-GPL%203.0--or--later-blue.svg" alt="GPL 3.0 or later">
@@ -51,14 +51,14 @@ Ogni riga è una parte di questo repository e il semaforo dice a che punto è og
 
 ## 🎯 Panoramica
 
-* **Cosa sarà:** una versione minima per smartwatch dell'app Android, con uno sguardo rapido per sapere se qualcosa è rosso e agli ultimi avvisi importanti del tuo monitor.
+* **Cosa sarà:** una versione minima per smartwatch Wear OS dell'app Android, con uno sguardo rapido per sapere se qualcosa è rosso e agli ultimi avvisi importanti del tuo monitor.
 * **Segue l'app Android:** viene costruita dopo [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) e si limita a una parte di ciò che quell'app mostra.
 * **Sola lettura:** leggerà soltanto dal tuo monitor. Non scriverà su GitHub e non cambierà nulla nel monitor.
 * **Cosa non è (ancora):** non c'è alcuna app da installare, né release, né data. Questo repository riserva solo il suo posto e dice con onestà ciò che è previsto.
 
 ## 🧩 Ruolo in EH3D
 
-TOOLS-GITHUB-ACTIONS-MONITOR-WATCH vuole essere la versione minima per smartwatch dell'app Android [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) di GitHub Actions Monitor ([TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)). Mostrerebbe una piccola parte di ciò che il monitor già sa e non deciderebbe nulla da sé.
+TOOLS-GITHUB-ACTIONS-MONITOR-WATCH vuole essere la versione minima per smartwatch Wear OS dell'app Android [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) di GitHub Actions Monitor ([TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)). Mostrerebbe una piccola parte di ciò che il monitor già sa e non deciderebbe nulla da sé.
 
 ## 🏛️ Architettura
 
@@ -148,8 +148,8 @@ Il README e i testi esistono in inglese, spagnolo, francese, italiano, tedesco, 
 
 ## 🔗 Progetti correlati
 
-* [TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR): il monitor di cui lo smartwatch vuole mostrare i dati
-* [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID): l'app Android prevista che questa versione per smartwatch segue
+* [TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR): il monitor di cui lo smartwatch Wear OS vuole mostrare i dati
+* [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID): l'app Android prevista che questa versione per smartwatch Wear OS segue
 * [EH3D-DOCS](https://github.com/JuanenRac/EH3D-DOCS): le convenzioni e i controlli condivisi
 
 ## 📚 Documentazione

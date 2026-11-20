@@ -2,7 +2,7 @@
   "repo": "TOOLS-GITHUB-ACTIONS-MONITOR-WATCH",
   "ecosystem": "eh3d",
   "tagline": "A glance at your workflows on your wrist: planned, not built.",
-  "description": "The planned minimal watch version follows the Android app, only reads from the monitor of its user and shows a small part of what the monitor knows. This repository has no code yet.",
+  "description": "The planned minimal Wear OS watch version follows the Android app, only reads from the monitor of its user and shows a small part of what the monitor knows. This repository has no code yet.",
   "columns": [
     "WHO WILL USE IT",
     "THIS REPOSITORY",

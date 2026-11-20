@@ -6,7 +6,7 @@
 
 <p align="center"><a href="README.md">🇺🇸 English</a> | <a href="README_spa.md">🇪🇸 Español</a> | <a href="README_fra.md">🇫🇷 Français</a> | <a href="README_ita.md">🇮🇹 Italiano</a> | <a href="README_deu.md">🇩🇪 Deutsch</a> | <a href="README_zho.md">🇨🇳 中文</a> | 🇯🇵 <b>日本語</b> | <a href="README_por.md">🇵🇹 Português</a></p>
 
-### GitHub Actions Monitor の Android アプリに続く、最小構成のウォッチ版（計画中）：ワークフローを手首ですばやく確認します。足場のみで、まだ何も実装されていません。
+### GitHub Actions Monitor の Android アプリに続く、最小構成の Wear OS ウォッチ版（計画中）：ワークフローを手首ですばやく確認します。足場のみで、まだ何も実装されていません。
 
 <p align="center">
   <img src="https://img.shields.io/badge/License-GPL%203.0--or--later-blue.svg" alt="GPL 3.0 or later">
@@ -46,19 +46,19 @@
 | リポジトリの土台 | 🟡 | マニフェスト、8 言語の README、ライセンス、共通のリポジトリ チェックが CI で実行されます。 |
 | ウォッチ アプリのコード | 🔴 | 未着手：このリポジトリにはまだウォッチ用のプロジェクトがありません。 |
 | テスト | 🔴 | アプリのテストはなく、リポジトリのチェックだけが実行されます。 |
-| モニターとの接続 | 🔴 | 未着手。ウォッチがデータをどう受け取るか（Android アプリ経由か直接か）は決まっていません。 |
+| モニターとの接続 | 🔴 | 未着手。Wear OS ウォッチがデータをどう受け取るか（Android アプリ経由か直接か）は決まっていません。 |
 | ウォッチと通知 | 🔴 | 未着手で、ウォッチでは一度も実行されていません。通知サービスは接続されていません。 |
 
 ## 🎯 概要
 
-* **これが何になるか：** Android アプリの最小構成のウォッチ版です。赤いものがないか、あなた自身のモニターの最新の重要なアラートをすばやく確認できます。
+* **これが何になるか：** Android アプリの最小構成の Wear OS ウォッチ版です。赤いものがないか、あなた自身のモニターの最新の重要なアラートをすばやく確認できます。
 * **Android アプリに続きます：** [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) の後に作られ、そのアプリが表示する内容の一部だけを扱います。
 * **読み取り専用：** あなたのモニターから読み取るだけです。GitHub に書き込まず、モニターの内容も変更しません。
 * **（まだ）そうではないもの：** インストールできるアプリも、リリースも、日付もありません。このリポジトリは場所を確保し、計画していることを正直に伝えるだけです。
 
 ## 🧩 EH3D での役割
 
-TOOLS-GITHUB-ACTIONS-MONITOR-WATCH は、GitHub Actions Monitor（[TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)）の Android アプリ [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) の最小構成のウォッチ版になることを目指しています。モニターがすでに知っていることのごく一部を表示するだけで、自分では何も決めません。
+TOOLS-GITHUB-ACTIONS-MONITOR-WATCH は、GitHub Actions Monitor（[TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)）の Android アプリ [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID) の最小構成の Wear OS ウォッチ版になることを目指しています。モニターがすでに知っていることのごく一部を表示するだけで、自分では何も決めません。
 
 ## 🏛️ アーキテクチャ
 
@@ -136,11 +136,11 @@ MONITOR-WATCH/
 * コードがありません。アプリもパッケージも画面もありません。
 * ウォッチでも実際のモニターに対しても、何も試していません。
 * ウォッチは Android アプリに続くため、そのアプリができるまで始められません。
-* ウォッチがデータをどう受け取るかはまだ決まっていません。
+* Wear OS ウォッチがデータをどう受け取るかはまだ決まっていません。
 
 **次のステップ**
 
-* Android アプリを待ち、ウォッチがデータをどう受け取るかを決めて、テストを CI に載せながら最小の有用な画面を作ります。
+* Android アプリを待ち、Wear OS ウォッチがデータをどう受け取るかを決めて、テストを CI に載せながら最小の有用な画面を作ります。
 
 ## 🌍 言語
 
@@ -148,8 +148,8 @@ README とテキストは、英語、スペイン語、フランス語、イタ�
 
 ## 🔗 関連プロジェクト
 
-* [TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)：ウォッチがデータを表示する予定のモニター
-* [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID)：このウォッチ版が続く、計画中の Android アプリ
+* [TOOLS-GITHUB-ACTIONS-MONITOR](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR)：Wear OS ウォッチがデータを表示する予定のモニター
+* [TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID](https://github.com/JuanenRac/TOOLS-GITHUB-ACTIONS-MONITOR-ANDROID)：この Wear OS ウォッチ版が続く、計画中の Android アプリ
 * [EH3D-DOCS](https://github.com/JuanenRac/EH3D-DOCS)：規約と共通のチェック
 
 ## 📚 ドキュメント
